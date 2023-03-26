@@ -1,0 +1,281 @@
+/* Buttons CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 70px;
+}
+
+.buttons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+i {
+  font-size: 30px;
+}
+
+.button1 {
+  color: #356ddb;
+}
+
+.button2 {
+  color: #1199f5;
+}
+
+.button3 {
+  border: double 2px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at bottom left,
+      #4f5bd5,
+      #962fbf,
+      #d62976,
+      #fa7e1e,
+      #feda75
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.button3 > i {
+  background: -webkit-linear-gradient(
+    45deg,
+    #4f5bd5,
+    #962fbf,
+    #d62976,
+    #fa7e1e,
+    #feda75
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button4 {
+  color: #0570b7;
+}
+
+.button5 {
+  color: #020df6;
+}
+
+/* Post Format : Gallery CSS */
+
+@font-face {
+  font-family: "Lora";
+  src: url(./assets/fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+p {
+  color: #4b4b4b;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Lora;
+  font-weight: 500;
+}
+
+.paragraph > * {
+  margin: 20px;
+}
+
+.header {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.riverSide {
+  height: 400px;
+  width: 800px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.8;
+}
+
+.lorem {
+  height: 100%;
+  width: 800px;
+}
+
+.readMore {
+  padding: 0px 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #696969;
+  background-color: white;
+  border: 3px solid #696969;
+  border-top: hidden;
+  border-bottom: hidden;
+  cursor: pointer;
+}
+
+/* Gala Group CSS*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+.qala::before {
+  background-image: url(./assets/images/castle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  font-family: Montserrat;
+}
+
+.top {
+  background-color: #292929;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  padding: 7px;
+  padding-left: 150px;
+}
+
+.top > h1 {
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  background-color: transparent;
+  margin-left: 30px;
+  position: relative;
+}
+
+.icon1 {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  position: absolute;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 20px;
+  background-color: #292929;
+  position: absolute;
+}
+
+.icon3 {
+  width: 10px;
+  height: 10px;
+  top: 50px;
+  left: 40px;
+  background-color: #292929;
+  position: absolute;
+}
+
+.quarter {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+.topic {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.content {
+  padding: 150px 600px 150px 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 30px;
+}
+
+.qalaOrange {
+  color:#ff5b02;
+}
+
+.getInTouch {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    color: #676767;
+    background-color: #ff5b02;
+    color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
